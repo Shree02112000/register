@@ -17,6 +17,7 @@ db.once('open',()=>{
 })
 
 const app =express()
+
 app.use(morgan('dev'))
 app.use(bodyparser.urlencoded({extended:true}))
 app.use(bodyparser.json())
